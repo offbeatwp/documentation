@@ -1,2 +1,44 @@
 # Installation
 
+## Requirements
+
+The use OffbeatWP the following services / packages are required:
+
+- <a href="https://getcomposer.org/" target="_blank">Composer</a>
+- Git
+- NPM / Yarn
+- Node
+- <a href="https://wp-cli.org/" target="_blank">WP-CLI</a>
+- Webserver (Nginx / Apache)
+- Database (Mysql / MariaDB)
+- PHP (7.2+ recommended)
+
+How to install it depends on the operation system you are using. For Mac users: <a href="https://brew.sh/" target="_blank">Homebrew</a> is your friend.
+
+## Install OffbeatWP WP-CLI package
+To make it easier to install and scaffold OffbeatWP themes and elements we introduced the WP-CLI package. You can easily install it with the following command:
+
+```bash
+wp package install https://github.com/offbeatwp/wp-cli-offbeatwp.git
+```
+
+## Install Wordpress, Theme and Framwork
+
+### 1. Install Wordpress
+
+We can easily install Wordpress through WP-CLI:
+
+```bash
+mkdir {folder_name}
+cd {folder_name}
+wp core download
+wp core config --dbname="{dbname}" --dbuser="{dbuser}" --dbpass="{dbpassword}" --dbhost="{dbhost}" --dbprefix="{prefix}"
+wp core install --url="{url}" --title="{title}" --admin_user="{username}" --admin_email="{email}"
+```
+
+### 2. Install the theme
+
+```bash
+wp offbeatwp init-theme {theme-slug}
+```
+The latest boostrap theme should be automatically been downloaded from git and activated within wordpress.
