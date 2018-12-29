@@ -15,6 +15,15 @@ The use OffbeatWP the following services / packages are required:
 
 How to install it depends on the operation system you are using. For Mac users: <a href="https://brew.sh/" target="_blank">Homebrew</a> is your friend.
 
+### Optional, but recommended
+
+- <a href="https://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields Pro</a>
+
+To be hosest, we're in love with this plugin. It delivers awesome functionality out of the box, and joined with OffbeatWP, magic is happening. OffbeatWP integrates ACF on three different areas:
+1. Adding fields on posttypes and terms and make them available in the models automatically
+2. Site settings. Creating different sections of global settings for your website
+3. Pagebuilder with OffbeatWP Components. [Learn more about ACF Layout with OffbeatWP](https://github.com/offbeatwp/acf-layout)
+
 ## Install OffbeatWP WP-CLI package
 To make it easier to install and scaffold OffbeatWP themes and elements we introduced the WP-CLI package. You can easily install it with the following command:
 
