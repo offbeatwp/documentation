@@ -51,3 +51,7 @@ wp core install --url="{url}" --title="{title}" --admin_user="{username}" --admi
 wp offbeatwp init-theme {theme-slug}
 ```
 The latest boostrap theme should be automatically been downloaded from git and activated within wordpress.
+
+### 3. Enjoy working with OffbeatWP
+
+When you access the website you should see a link to the default "Hello world" post. _(Will replace this later with some Default OffbeatWP Introduction page)_

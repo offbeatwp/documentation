@@ -24,17 +24,18 @@ It's our mission the get a more professional and standardised way of developing 
 - [Container](architecture-concepts__container.md)
 - [Services](architecture-concepts__services.md)
 - [Components](architecture-concepts__components.md)
-- [MVC](architecture-concepts__mvc.md)
 
 ## Basics
 
+- [Post Types](basics__post_types.md)
+- [Taxonomies](basics__taxonomies.md)
 - [Routing](basics__routing.md)
 - [Controllers](basics__controllers.md)
-- [Models](basics__models.md)
+- [Post models](basics__post_models.md)
+- [Term models](basics__term_models.md)
 - [Views](basics__views.md)
+- [Modules](basics__modules.md)
 - [Components](basics__components.md)
-- [Error Handling](basics__error-handling.md)
-- [Logging](basics__logging.md)
 
 ## Frontend
 
