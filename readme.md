@@ -39,6 +39,5 @@ It's our mission the get a more professional and standardised way of developing 
 
 ## Frontend
 
-- [Twig templates](frontend__twig-templates.md)
 - [Compiling assets](frontend__compiling-assets.md)
 
