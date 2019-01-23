@@ -23,7 +23,7 @@ The command also accepts an argument `--supports=""` containing a comma-seperate
 ## Rendering a component
 
 Without supporting other interfaces the only way to render you component within a view is by calling the component within a twig template:
-`{{ component({$component_name}, {}) }}`
+`{{ component('COMPONENT_NAME', {}) }}`
 
 When the component is in your `/components/` folder the name will be equal to the folder of you component. The first character will be lowercased automatically. So component `Jumbotron` will get the name `Jumbtron`.
 
@@ -56,3 +56,49 @@ A fourth interface will be added soon: 'editor' for gutenberg
 Currently 1 pagebuilder is been implemented and maintained by OffbeatWP. It's an integration with Advanced Custom Fields. It provides you with an drag-and-drop editor the build your pages. The awesome thing about this builder is that you have 100% control over the output of the editor.
 
 Check out more information about the [ACF Page Builder implemenation for OffbeatWP](https://github.com/offbeatwp/acf-layout)
+
+## Form
+
+You can define a form to a component so it's easy to insert data from a pagebuilder, widget or any other implementation. 
+
+To do so you have to define a form in the settings method like:
+
+```
+public static function settings()
+{
+    return [
+        'name'       => 'Button',
+        'slug'       => 'button',
+        'supports'   => ['pagebuilder', 'editor', 'shortcode'],
+        'form'       => self::form(),
+    ];
+}
+```
+
+The attribute should be an instance of `\OffbeatWP\Form\Form:class`. Below an example of the `form()` method that should be included inside the component class:
+
+```
+public static function form()
+{
+    $form = new Form();
+
+    $form
+        ->addTab('general', 'General')
+            ->addSection('general', 'General')
+                ->addField(new \OffbeatWP\Form\Fields\Text('title', 'Title'))
+                ->addField(new \OffbeatWP\Form\Fields\Text('title1', 'Title 1'))
+                ->addField(new \OffbeatWP\Form\Fields\Text('title2', 'Title 2'))
+        ->addTab('general2', 'General')
+            ->addSection('general2', 'General')
+                ->addField(new \OffbeatWP\Form\Fields\Text('title2', 'Title'))
+                ->addField(new \OffbeatWP\Form\Fields\Text('title21', 'Title 1'))
+                ->addField(new \OffbeatWP\Form\Fields\Text('title22', 'Title 2'));
+
+    return $form;
+}
+```
+
+More about the `Form` functionalitiy you'll find at [Forms](basics__forms.md)
+
+
+

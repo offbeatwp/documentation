@@ -36,6 +36,7 @@ It's our mission the get a more professional and standardised way of developing 
 - [Views](basics__views.md)
 - [Modules](basics__modules.md)
 - [Components](basics__components.md)
+- [Forms](basics__forms.md)
 
 ## Frontend
 

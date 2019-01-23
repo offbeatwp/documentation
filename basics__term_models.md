@@ -1,4 +1,4 @@
-## Term models
+# Term models
 
 Models are one of the cool features of OffbeatWP. It gives a much more intuitive way of getting data from a post or term like the title, content or url.
 
