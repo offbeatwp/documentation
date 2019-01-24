@@ -262,7 +262,7 @@ In some cases it could be interesting to create your own fields collection so yo
 ```php
 namespace App\Form\FieldsCollections;
 
-use \OffbeatWP\Forms\FieldsCollections\AbstractFieldsCollection;
+use \OffbeatWP\Form\FieldsCollections\AbstractFieldsCollection;
 use \OffbeatWP\Form\Fields\Text;
 
 class SocialLinks extends AbstractFieldsCollection {
