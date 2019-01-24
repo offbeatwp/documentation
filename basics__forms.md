@@ -268,9 +268,9 @@ use \OffbeatWP\Form\Fields\Text;
 class SocialLinks extends AbstractFieldsCollection {
     public function __construct()
     {
-        $this->addField(new Text::make('facebook_link', __('Facebook link', 'offbeatwp')));
-        $this->addField(new Text::make('instagram_link', __('Instagram link', 'offbeatwp')));
-        $this->addField(new Text::make('twitter_link', __('Twitter link', 'offbeatwp')));
+        $this->addField(Text::make('facebook_link', __('Facebook link', 'offbeatwp')));
+        $this->addField(Text::make('instagram_link', __('Instagram link', 'offbeatwp')));
+        $this->addField(Text::make('twitter_link', __('Twitter link', 'offbeatwp')));
     }
 }
 ```
