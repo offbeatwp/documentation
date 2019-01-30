@@ -2,7 +2,7 @@
 
 Post and post types are one of the core elements of Wordpress, and one of the reasons Wordpress is so flexible. 
 
-Eventhough the default Wordpress way of registering post types will still work with OffbeatWP, we would encourage you to use the OffbeatWP method to do it. It makes registering a post type a lot more declarative. 
+Even though the default Wordpress way of registering post types will still work with OffbeatWP, we would encourage you to use the OffbeatWP method to do it. It makes registering a post type a lot more declarative. 
 
 This is how registering a post-type in OffbeatWP looks like:
 
@@ -55,7 +55,7 @@ class Downloads extends AbstractModule
 
 ## Register the related model
 
-When you register the post_type you can set the related model with it. By the OffbeatWP knows how to map the posts the the right model.
+When you register the post_type you can set the related model with it. By the OffbeatWP knows how to map the posts the right model.
 
 `->model(Models\DownloadModel::class)`
 

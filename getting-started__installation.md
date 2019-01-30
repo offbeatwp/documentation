@@ -19,8 +19,8 @@ How to install it depends on the operation system you are using. For Mac users: 
 
 - <a href="https://www.advancedcustomfields.com/pro/" target="_blank">Advanced Custom Fields Pro</a> ($25,- for single website / $100 for developer licence (unlimited sites))
 
-To be hosest, we're in love with this plugin. It delivers awesome functionality, and joined with OffbeatWP, magic is happening. OffbeatWP integrates ACF on three different areas:
-1. Adding fields on posttypes and terms and make them available in the models automatically. [Learn more](https://github.com/offbeatwp/acf)
+To be honest, we're in love with this plugin. It delivers awesome functionality and joined with OffbeatWP, magic is happening. OffbeatWP integrates ACF on three different areas:
+1. Adding fields on post types and terms and make them available in the models automatically. [Learn more](https://github.com/offbeatwp/acf)
 2. Site settings. Creating different sections of global settings for your website. [Learn more](https://github.com/offbeatwp/acf-sitesettings)
 3. **Pagebuilder with OffbeatWP Components**. [Learn more about ACF Layout with OffbeatWP](https://github.com/offbeatwp/acf-layout)
 
@@ -50,7 +50,7 @@ wp core install --url="{url}" --title="{title}" --admin_user="{username}" --admi
 ```bash
 wp offbeatwp init-theme {theme-slug}
 ```
-The latest boostrap theme should be automatically been downloaded from git and activated within wordpress.
+The latest bootstrap theme should be automatically been downloaded from git and activated within WordPress.
 
 ### 3. Enjoy working with OffbeatWP
 

@@ -1,6 +1,6 @@
 # Directory structure
 
-The directory sturucture of an OffbeatWP look like this:
+The directory structure of an OffbeatWP look like this:
 
 - app
     - Controllers
@@ -16,7 +16,7 @@ The directory sturucture of an OffbeatWP look like this:
 - assets
     _Empty by default, the compiled assets will be in here_
 - components
-    _Empty by default, will contain the website\` components_
+    _Empty by default will contain the website\` components_
 - composer.json
     _This file stores the PHP dependencies_
 - config
@@ -33,9 +33,9 @@ The directory sturucture of an OffbeatWP look like this:
 - functions.php
     _This is a default Wordpress theme file. OffbeatWP uses it the spin up the framework._
 - index.php
-    _This is a default Wordpress theme file. OffbeatWP uses it as entry of the view._
+    _This is a default Wordpress theme file. OffbeatWP uses it as an entry of the view._
 - modules
-    _Empty by default, will contain the website\` modules_
+    _Empty by default will contain the website\` modules_
 - package.json
     _This file stores the NPM dependencies_
 - resources
@@ -59,7 +59,7 @@ The directory sturucture of an OffbeatWP look like this:
 - screenshot.png
     _Is used as preview image in the overview of the available themes_
 - style.css
-    _This is a default Wordpress theme file, only used for the basic theme information like name, author, licence, etc. _
+    _This is a default Wordpress theme file, only used for the basic theme information like name, author, license, etc. _
 - tests
     _Will contain your website' unit tests (still needs to be implemented)_
 - vendor

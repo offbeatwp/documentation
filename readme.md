@@ -1,13 +1,13 @@
 # OffbeatWP Documentation
 
-Currently the documentation is only available here on github. We are busy around the clock the develop a stunning website for OffbeatWP to give it the attention it deserves. The documentation will come available on [https://offbeatwp.com/docs](https://offbeatwp.com/docs)
+Currently, the documentation is only available here on Github. We are busy around the clock the develop a stunning website for OffbeatWP to give it the attention it deserves. The documentation will come available on [https://offbeatwp.com/docs](https://offbeatwp.com/docs)
 
 ## Contribute to OffbeatWP
 
-It's our mission the get a more professional and standardised way of developing wordpress themes. We would love it when you embrase our mission by contributing to offbeatWP. You can do this is two ways:
+It's our mission the get a more professional and standardized way of developing Wordpress themes. We would love it when you embrace our mission by contributing to offbeatWP. You can do this is two ways:
 
-- Testing, bugfixing and extending to the OffbeatWP Core
-- Making plugins compatible with OffbeatWP so, for example, pagebuilders can use the components from OffbeatWP
+- Testing, bug fixing and extending to the OffbeatWP Core
+- Making plugins compatible with OffbeatWP so, for example, page builders can use the components from OffbeatWP
 
 # Table of contents
 

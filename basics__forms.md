@@ -1,10 +1,10 @@
 # Forms
 
-The `\OffbeatWP\Form\Form` is an abstract implementation that can be mapped to the right structure depending on the implemenation you're using. The forms are currently used for Components and SiteSettings. 
+The `\OffbeatWP\Form\Form` is an abstract implementation that can be mapped to the right structure depending on the implementation you're using. The forms are currently used for Components and SiteSettings. 
 
 ## Form Structure
 
-The current stucture of a form is like this:
+The current structure of a form is like this:
 ```
 - Form
     - Tab
@@ -14,7 +14,7 @@ The current stucture of a form is like this:
             - Field
 ```
 
-The use of tabs in a Component context is mandatory, but for SiteSettings it isn't. A Section is not mandatory, but really helps to structure your fields.
+The use of tabs in a Component context is mandatory, but for SiteSettings, it isn't. A Section is not mandatory but really helps to structure your fields.
 
 A more advanced example of a form:
 ```
@@ -164,7 +164,7 @@ Selecting one of the default bootstrap breakpoints
 
 ### TextAlign
 
-Select box with text align options
+Select box with text-align options
 
 ```php
 \OffbeatWP\Form\Fields\TextAlign::make($id, $label);
@@ -172,7 +172,7 @@ Select box with text align options
 
 ### HorizontalAlign
 
-Select box with horizonal align options
+Select box with horizontal align options
 
 ```php
 \OffbeatWP\Form\Fields\HorizontalAlign::make($id, $label);
@@ -180,7 +180,7 @@ Select box with horizonal align options
 
 ### VericalAlign
 
-Select box with vertical align options
+Select box with vertical-align options
 
 ```php
 \OffbeatWP\Form\Fields\VericalAlign::make($id, $label);
@@ -188,9 +188,9 @@ Select box with vertical align options
 
 ## Creating your own fields
 
-In some cases it could be interesting to create your own fields by extending OffbeatWP Fields so you can reuse them. The right place to to this is in a `app/Form/Fields` folder from the root of your theme.
+In some cases, it could be interesting to create your own fields by extending OffbeatWP Fields so you can reuse them. The right place to this is in an `app/Form/Fields` folder from the root of your theme.
 
-If for example you want to have a field to define a rating create create a file named `Rating.php` in your `app/Form/Fields` directory, containing:
+If for example, you want to have a field to define a rating create a file named `Rating.php` in your `app/Form/Fields` directory, containing:
 
 ```php
 <?php
@@ -225,7 +225,7 @@ $form->.......->addField(\App\Form\Fields\Rating::make($id, $label))
 
 ## Field Collections
 
-Field collections are combination of fields that can be reused, current collections available:
+Field collections are a combination of fields that can be reused, current collections available:
 
 Adding a fields collection to a form must be done with the `->addFields` method.
 
@@ -237,8 +237,8 @@ $form->.......->addFields(\OffbeatWP\Form\FieldsCollections\Heading::make())
 
 The heading fields collection automatically adds the following fields to your form:
 - Title (text field)
-- Heading Type (selectbox is h1-h6)
-- Heading Style (selectbox is h1-h6)
+- Heading Type (select box is h1-h6)
+- Heading Style (select box is h1-h6)
 
 ```php
 \OffbeatWP\Form\FieldsCollections\Heading::make();
@@ -255,9 +255,9 @@ The Link fields collection automatically adds the following fields to your form:
 \OffbeatWP\Form\FieldsCollections\Link::make();
 ```
 
-## Defining you own Collections
+## Defining your own Collections
 
-In some cases it could be interesting to create your own fields collection so you can reuse them. The right place to to this is in a `app/Form/FieldsCollections` folder from the root of your theme.
+In some cases, it could be interesting to create your own fields collection so you can reuse them. The right place to this is in an `app/Form/FieldsCollections` folder from the root of your theme.
 
 ```php
 namespace App\Form\FieldsCollections;
