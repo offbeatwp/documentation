@@ -1,8 +1,8 @@
 # Compiling assets
 
-OffbeatWP has an assets builder based on webpack. It builds sass, es6 javascript and images. Besides of that the builder contains browsersync to have a easier workflow during development.
+OffbeatWP has an assets builder based on web pack. It builds sass, es6 javascript and images. Besides of that the builder contains browser-sync to have an easier workflow during development.
 
-The first time you have to get the dependencies by running to following command from the root of you OffbeatWP theme
+The first time you have to get the dependencies by running to the following command from the root of your OffbeatWP theme
 
 ```
 yarn install    |or|    npm install
@@ -23,11 +23,11 @@ Your sass files should be in `resources/sass/` The `main.scss` file is the entry
 
 ## Javascript
 
-Your js files should be in `resources/js/` The `main.js` file is the entry-file for you javascript. Javascript can be written in ES6.
+Your js files should be in `resources/js/` The `main.js` file is the entry-file for your javascript. Javascript can be written in ES6.
 
-## Icon font
+## Icon Font
 
-The builder can created icon fonts for you. Just create an `icons` folder in `/resources/` and move some `.svg` files into to. Next run the command from the route of your OffbeatWP Theme folder:
+The builder can create icon fonts for you. Just create an `icons` folder in `/resources/` and move some `.svg` files into to. Next, run the command from the route of your OffbeatWP Theme folder:
 
 ```
 yarn offbeatwp icons

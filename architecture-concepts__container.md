@@ -1,6 +1,6 @@
 # Container
 
-The container manages the dependencies and performs the dependecy injection. OffbeatWP uses the powerfool implemention from [PHP DI](http://php-di.org/). You'll find the documentation of PHP DI [here](http://php-di.org/doc/).
+The container manages the dependencies and performs the dependency injection. OffbeatWP uses the powerful implementation from [PHP DI](http://php-di.org/). You'll find the documentation of PHP DI [here](http://php-di.org/doc/).
 
 Example:
 ```

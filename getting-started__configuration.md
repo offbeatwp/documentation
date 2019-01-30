@@ -4,7 +4,7 @@ When you have installed Wordpress initiated a OffbeatWP theme your good to go. T
 
 ## Developing
 
-By default OffbeatWP assumes your are in `production` mode. This means for example that the twig-templates are compiled to `/wp-content/caches/twig`. During development you don't want this of course. You need to tell OffbeatWP you are in development mode. This is easily done by adding this to your `wp-config.php`:
+By default OffbeatWP assumes you are in `production` mode. This means for example that the twig-templates are compiled to `/wp-content/caches/twig`. During development you don't want this of course. You need to tell OffbeatWP you are in development mode. This is easily done by adding this to your `wp-config.php`:
 
 ```
 define('WP_ENV', 'development');
@@ -35,7 +35,7 @@ You have the same parameters available like with using [`register_sidebar`](http
 
 ## Defining additional image sizes:
 
-Open the file `config/images.php`. You can easy defined a image size by adding this to the array:
+Open the file `config/images.php`. You can easy defined an image size by adding this to the array:
 ```
     '{name}' => [
         'width' => {width | int},
@@ -46,7 +46,7 @@ Open the file `config/images.php`. You can easy defined a image size by adding t
 
 ## Adding services
 
-Open the file `config/services.php`. You can easy add a service by adding it to the array:
+Open the file `config/services.php`. You can easily add a service by adding it to the array:
 ```
     OffbeatWP\Services\ServiceScripts::class,
 ```

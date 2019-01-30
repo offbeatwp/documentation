@@ -8,7 +8,7 @@ OffbeatWP has two types of models:
 2. Term Models
     A term model represents a term in a specific taxonomy
 
-A term model represents a term of a specific taxonomiy. Below an example of a term model:
+A term model represents a term of a specific taxonomy. Below an example of a term model:
 
 ```
 <?php
@@ -39,7 +39,7 @@ wp offbeatwp make-termmodel {name} --taxonomy={taxonomy}--module={module_name}
 
 ## Associating a taxonomy to a model
 
-OffbeatWP maps terms to the related model. But to make this possible we have to register the models. When you register the taxonomy within your theme you can do this all at once as [explained here](basics__taxonomies.md). But if the taxonomy is buildin (like category , post_tag), or is defined within a plugin you have to do this by:
+OffbeatWP maps terms to the related model. But to make this possible we have to register the models. When you register the taxonomy within your theme you can do this all at once as [explained here](basics__taxonomies.md). But if the taxonomy is building (like category, post_tag), or is defined within a plugin you have to do this by:
 
 ```
 offbeat('taxonomy')->registerTermModel('post_tag', \App\Models\PostTagModel::class);
@@ -79,7 +79,7 @@ Get the parent term (model) of the term
 
 #### `getMeta($key, $single = true)`
 
-Get a meta value of the term. The first attribute is the key of the meta. The second parameter is if you desire a single or multiple response. Single is default.
+Get a meta value of the term. The first attribute is the key of the meta. The second parameter is if you desire a single or multiple responses. Single is default.
 
 #### `setMeta($key, $value)`
 
@@ -152,7 +152,7 @@ Like with the post models you can chain some methods to filter terms:
 
 `where($args)`
 
-The arguments are equal to [WP_Term_Query::\__construct](https://developer.wordpress.org/reference/classes/WP_Term_Query/__construct/). But since this wont make your code very readable we do not recommend this filter.
+The arguments are equal to [WP_Term_Query::\__construct](https://developer.wordpress.org/reference/classes/WP_Term_Query/__construct/). But since this won't make your code very readable we do not recommend this filter.
 
 `whereMeta($key, $value = '', $compare = '')`
 
@@ -184,7 +184,7 @@ Ordering terms can be done by adding `->order($order_by, $order)` to the chain, 
 TermModel::whereMeta('isAwesome', 'totally')->order('term_id', 'ASC')->take(5);
 ```
 
-This will get you the first 5 results of all posts the the tag "awesome", ordered by id (ascending).
+This will get you the first 5 results of all posts the tag "awesome", ordered by id (ascending).
 
 To order by *meta* give as first argument `meta:{meta_key}` or to order as number `meta_num:{meta_key}`
 

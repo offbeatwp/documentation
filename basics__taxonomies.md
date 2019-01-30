@@ -2,7 +2,7 @@
 
 Taxonomies are one of the core elements of Wordpress to structure posts. 
 
-Eventhough the default Wordpress way of registeren taxonmies will still work with OffbeatWP, we would encourage you to use the OffbeatWP method to do it. It makes registering a taxonomy a lot more declarative. 
+Even though the default Wordpress way of registering taxonomies will still work with OffbeatWP, we would encourage you to use the OffbeatWP method to do it. It makes registering a taxonomy a lot more declarative. 
 
 This is how registering a post-type in OffbeatWP looks like:
 
@@ -49,7 +49,7 @@ class Downloads extends AbstractModule
 
 ## Register the related model
 
-When you register the taxonomy you can set the related model with it. By the OffbeatWP knows how to map the terms the the right model.
+When you register the taxonomy you can set the related model with it. By the OffbeatWP knows how to map the terms the right model.
 
 `->model(Models\DownloadCategoryModel::class)`
 
@@ -76,6 +76,6 @@ When you register the taxonomy you can set the related model with it. By the Off
 
 `metaBox($metaboxCallback)`
 
-For more information about register taxonomies check the Wordpress documentation about [register_taxonomy](https://codex.wordpress.org/Function_Reference/register_taxonomy)
+For more information about registering taxonomies check the Wordpress documentation about [register_taxonomy](https://codex.wordpress.org/Function_Reference/register_taxonomy)
 
 
