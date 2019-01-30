@@ -37,4 +37,4 @@ OffbeatWP is going to look for the view in the nearest `views` directory. If it 
  
 ## JSON
 
-If you action returns an array it will be converted to a JSON string and then echoed to the user. The content-type will be changed to `application/json` as well.
+If your action returns an array it will be converted to a JSON string and then echoed to the user. The content-type will be changed to `application/json` as well.
