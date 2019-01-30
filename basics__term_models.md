@@ -79,7 +79,7 @@ Get the parent term (model) of the term
 
 #### `getMeta($key, $single = true)`
 
-Get a meta value of the term. The first attribute is the key of the meta. The second parameter is if you desire a single or multiple responses. Single is default.
+Get a meta value of the term. The first attribute is the key to the meta. The second parameter if you want to have single or multiple responses. Single is the default.
 
 #### `setMeta($key, $value)`
 
@@ -95,7 +95,7 @@ Returns an instance of WpQueryBuilder so you are able to use functionals like `-
 
 ## Macro
 
-You can extend any term model from outside the model itself. This is called a macro. We have a [independent service](https://github.com/offbeatwp/acf) to integrate [Advanded Custom Fields }(https://www.advancedcustomfields.com/pro/) with OffbeatWP. Within the term model we want to be able to easily get an ACF field. The service contains the following `macro`:
+You can extend any term model from outside the model itself. This is called a macro. We have a [independent service](https://github.com/offbeatwp/acf) to integrate [Advanded Custom Fields }(https://www.advancedcustomfields.com/pro/) with OffbeatWP. Within the term model, we want to be able to easily get an ACF field. The service contains the following `macro`:
 
 ```
 TermModel::macro('getField', function ($name, $format = true) {

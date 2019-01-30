@@ -20,7 +20,7 @@ OffbeatWP has functiontality included for site settings. The only implementation
 
 ## Added Wordpress Functionality
 
-Within your twig template, you'll have access to a `wp` global variable. Through this variable you have access to a lot of the default Wordpress functionality. 
+Within your twig template, you'll have access to a `wp` global variable. Through this variable, you have access to a lot of the default Wordpress functionality. 
 
 `{{ wp.head }}` -> wp_head();
 

@@ -4,7 +4,7 @@ A service is a  script that contains code to bootstrap a specific functionality 
 
 All the functionality to your website is initiated through services. So your website will contain multiple services, but also external functionality (pulled through composer) will be added to your theme as service.
 
-You have to register a service to have it bootstrapped. A service is registered in the `config/services.php` file, like this:
+You have to register the service to have it bootstrapped. A service is registered in the `config/services.php` file, like this:
 
 ```
     OffbeatWP\Services\ServiceScripts::class,

@@ -1,10 +1,10 @@
 # Configuration
 
-When you have installed Wordpress initiated a OffbeatWP theme your good to go. There is no configuration to make OffbeatWP work. But below there are some configurations you need to know:
+When you have installed Wordpress initiated the OffbeatWP theme your good to go. There is no configuration to make OffbeatWP work. But below there are some configurations you need to know:
 
 ## Developing
 
-By default OffbeatWP assumes you are in `production` mode. This means for example that the twig-templates are compiled to `/wp-content/caches/twig`. During development you don't want this of course. You need to tell OffbeatWP you are in development mode. This is easily done by adding this to your `wp-config.php`:
+By default, OffbeatWP assumes you are in `production` mode. This means for example that the twig-templates are compiled to `/wp-content/caches/twig`. During development, you don't want this of course. You need to tell OffbeatWP you are in development mode. This is easily done by adding this to your `wp-config.php`:
 
 ```
 define('WP_ENV', 'development');
@@ -31,7 +31,7 @@ Open the file `config/sidebars.php`. You can easy defined a new sidebar by addin
     ]
 ```
 
-You have the same parameters available like with using [`register_sidebar`](https://codex.wordpress.org/Function_Reference/register_sidebar), except from `id`.
+You have the same parameters available like with using [`register_sidebar`](https://codex.wordpress.org/Function_Reference/register_sidebar), except `id`.
 
 ## Defining additional image sizes:
 
