@@ -103,7 +103,7 @@ Setting a meta to the post. The argument is the key, the second the value of the
 
 #### `getTerms(taxonomy, $args = [])`
 
-Get the terms of the post by taxonomy. The first argument is the taxonomy. With the second parameter you can set some additional arguments. These arguments are equal to the [WP_Term_Query::\__construct](https://developer.wordpress.org/reference/classes/wp_term_query/__construct/) method.
+Get the terms of the post by taxonomy. The first argument is the taxonomy. With the second parameter, you can set some additional arguments. These arguments are equal to the [WP_Term_Query::\__construct](https://developer.wordpress.org/reference/classes/wp_term_query/__construct/) method.
 
 #### `hasFeaturedImage()`
 
@@ -135,7 +135,7 @@ You can add the constant `ORDER` and `ORDER_BY` to a model. Now every time you a
 
 ## Macro
 
-You can extend any post model from outside the model itself. This is called a macro. We have a [independent service](https://github.com/offbeatwp/acf) to integrate [Advanded Custom Fields }(https://www.advancedcustomfields.com/pro/) with OffbeatWP. Within the post model we want to be able to easily get an ACF field. The service contains the following `macro`:
+You can extend any post model from outside the model itself. This is called a macro. We have a [independent service](https://github.com/offbeatwp/acf) to integrate [Advanded Custom Fields }(https://www.advancedcustomfields.com/pro/) with OffbeatWP. Within the post model, we want to be able to easily get an ACF field. The service contains the following `macro`:
 
 ```
 PostModel::macro('getField', function ($name, $format = true) {
@@ -203,7 +203,7 @@ The arguments are equal to [WP_Query](https://codex.wordpress.org/Class_Referenc
 
 `whereTerm($taxonomy, $terms = [], $field = 'slug', $operator = 'IN')`
 
-Filter the posts by term. 
+Filter the posts by a term. 
 
 `whereDate($args)`
 

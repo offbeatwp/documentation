@@ -1,6 +1,6 @@
 # Routing
 
-OffbeatWP has a way of routing that makes it possible the use the default Wordpress rewrite rules, and map them to OffbeatWP controllers. This is done by a "callback route". In the future, we will make it also possible to define routes based on the url.
+OffbeatWP has a way of routing that makes it possible the use the default Wordpress rewrite rules and map them to OffbeatWP controllers. This is done by a "callback route". In the future, we will make it also possible to define routes based on the url.
 
 ## Callback routes
 

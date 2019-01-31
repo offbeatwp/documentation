@@ -31,7 +31,7 @@ To make it easier to install and scaffold OffbeatWP themes and elements we intro
 wp package install https://github.com/offbeatwp/wp-cli-offbeatwp.git
 ```
 
-## Install Wordpress, Theme and Framwork
+## Install Wordpress, Theme and Framework
 
 ### 1. Install Wordpress
 

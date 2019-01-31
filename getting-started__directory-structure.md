@@ -57,7 +57,7 @@ The directory structure of an OffbeatWP look like this:
     - web.php
         ((Routes for normal pages)
 - screenshot.png
-    _Is used as preview image in the overview of the available themes_
+    _Is used as a preview image in the overview of the available themes_
 - style.css
     _This is a default Wordpress theme file, only used for the basic theme information like name, author, license, etc. _
 - tests

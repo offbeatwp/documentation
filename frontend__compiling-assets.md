@@ -1,6 +1,6 @@
 # Compiling assets
 
-OffbeatWP has an assets builder based on web pack. It builds sass, es6 javascript and images. Besides of that the builder contains browser-sync to have an easier workflow during development.
+OffbeatWP has an assets builder based on web pack. It builds sass, es6 javascript and images. Besides that the builder contains browser-sync to have an easier workflow during development.
 
 The first time you have to get the dependencies by running to the following command from the root of your OffbeatWP theme
 

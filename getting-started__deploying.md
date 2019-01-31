@@ -1,6 +1,6 @@
 # Deploying
 
-Installing your website for the first time is with OffbeatWP no different than with any other Wordpress + Theme. But for deploying ongoing work we advice you the following approach:
+Installing your website for the first time is with OffbeatWP no different than with any other Wordpress + Theme. But for deploying ongoing work we advise you the following approach:
 
 ## 1. Have a GIT repository containing your OffbeatWP theme.
 
