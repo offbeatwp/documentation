@@ -1,6 +1,6 @@
 # Components
 
-OffbeatWP is a component driven framework for Wordpress. The components are blocks that can be rendered into your view. Components are really flexible and can be mapped to widgets, page builder elements, shortcodes and later even Gutenberg blocks.
+OffbeatWP is a component driven framework for Wordpress. Components are blocks that can be rendered into your view. Components are really flexible and can be mapped to widgets, page builder elements, shortcodes and later even Gutenberg blocks.
 
 A component can have its own class that contains all the information, settings and logic to render the component. 
 
