@@ -53,7 +53,7 @@ A fourth interface will be added soon: 'editor' for Gutenberg
 
 ## Page builder
 
-Currently, 1-page builder is been implemented and maintained by OffbeatWP. It's integration with Advanced Custom Fields. It provides you with a drag-and-drop editor the build your pages. The awesome thing about this builder is that you have 100% control over the output of the editor.
+Currently, a 1-page builder is been implemented and maintained by OffbeatWP. It's integration with Advanced Custom Fields. It provides you with a drag-and-drop editor the build your pages. The awesome thing about this builder is that you have 100% control over the output of the editor.
 
 Check out more information about the [ACF Page Builder implementation for OffbeatWP](https://github.com/offbeatwp/acf-layout)
 
