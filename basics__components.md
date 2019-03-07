@@ -53,7 +53,7 @@ A fourth interface will be added soon: 'editor' for Gutenberg
 
 ## Page builder
 
-OffbeatWP has implemented a really flexibel page builder into Wordpress. It's integration with Advanced Custom Fields. It provides you with a drag-and-drop editor the build your pages. The awesome thing about this builder is that you have 100% control over the output of the editor.
+OffbeatWP has implemented a really flexibele page builder into Wordpress. It's integration with Advanced Custom Fields. It provides you with a drag-and-drop editor the build your pages. The awesome thing about this builder is that you have 100% control over the output of the editor.
 
 Check out more information about the [ACF Page Builder implementation for OffbeatWP](https://github.com/offbeatwp/acf-layout)
 
