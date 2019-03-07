@@ -1,6 +1,8 @@
 # Routing
 
-OffbeatWP has a way of routing that makes it possible the use the default Wordpress rewrite rules and map them to OffbeatWP controllers. This is done by a "callback route". In the future, we will make it also possible to define routes based on the url.
+OffbeatWP has two ways of routing. The first uses the default Wordpress rewrite rules and will map them to the OffbeatWP controllers.
+This is done by a "callback route". The second one lets you define a route based on the URL
+
 
 ## Callback routes
 
@@ -18,6 +20,19 @@ offbeat('routes')->callback(
 The first attribute is the callback, this will be executed to find a match for the current request. If the callback returns true a match is found and it will not check any other later defined routes. If the callback returns false there was no match and it will check the next defined route. 
 
 Routes can be defined everywhere, as long as they are registered before WordPress tries to render the page. But OffbeatWP has preferred two ways to define routes:
+
+## URL routes
+
+The most basic URL routes accept a URL, providing a very simple and expressive method. 
+You can use a `->get()`, `->post()`, `->patch()`, `->put()` or  `->delete()` method based on what you need.
+Sometimes you will need to capture segments of the URL within your route. For example, you may need to capture a user's ID from the URL. You may do so by defining route parameters:
+
+```
+offbeat('routes')->get('user/{user_id}/',
+    [UserController::class, 'getThisUser']
+);
+```
+
 
 ### 1. In your themes route folder
 
