@@ -24,7 +24,7 @@ Routes can be defined everywhere, as long as they are registered before WordPres
 ## URL routes
 
 The most basic URL routes accept a URL, providing a very simple and expressive method. 
-You can use a `->get()` or `->post()` variable based on what you need.
+You can use a `->get()`, `->post()`, `->patch()`, `->put()` or  `->delete()` method based on what you need.
 Sometimes you will need to capture segments of the URL within your route. For example, you may need to capture a user's ID from the URL. You may do so by defining route parameters:
 
 ```
