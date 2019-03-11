@@ -17,7 +17,7 @@ namespace App\Models;
 use OffbeatWP\Content\Taxonomy\TermModel;
 
 class TagModel extends TermModel {
-    const POST_TYPE = 'tag';
+    const TAXONOMY = 'tag';
     const ORDER_BY  = 'menu_order';
     const ORDER     = 'ASC';
 }
