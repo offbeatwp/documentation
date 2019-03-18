@@ -341,6 +341,6 @@ $event->locations()->dissociateAll();
 
 
 ### Using relationships
-
+```
 $event->locations()->get();
-
+```
