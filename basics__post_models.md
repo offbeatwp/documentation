@@ -339,3 +339,8 @@ or to dissociate all relationships.
 $event->locations()->dissociateAll();
 ```
 
+
+### Using relationships
+```
+$event->locations()->get();
+```

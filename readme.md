@@ -37,6 +37,7 @@ It's our mission the get a more professional and standardized way of developing 
 - [Modules](basics__modules.md)
 - [Components](basics__components.md)
 - [Forms](basics__forms.md)
+- [Relationships (beta)](basics__post_models.md#relationships-beta)
 
 ## Frontend
 

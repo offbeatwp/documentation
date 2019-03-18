@@ -19,11 +19,11 @@ To run the builder for production:
 
 ## Sass
 
-Your sass files should be in `resources/sass/` The `main.scss` file is the entry-file for you sass
+Your sass files should be in `resources/sass/` folder. The `main.scss` file is the entry-file for you sass
 
 ## Javascript
 
-Your js files should be in `resources/js/` The `main.js` file is the entry-file for your javascript. Javascript can be written in ES6.
+Your js files should be in `resources/js/` folder. The `main.js` file is the entry-file for your javascript. Javascript can be written in ES6.
 
 ## Icon Font
 
