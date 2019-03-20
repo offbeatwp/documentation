@@ -1,6 +1,6 @@
 # Compiling assets
 
-OffbeatWP has an assets builder based on web pack. It builds sass, es6 javascript and images. Besides that the builder contains browser-sync to have an easier workflow during development.
+OffbeatWP has an assets builder based on web pack. It can build sass, es6 javascript and images. Besides that the builder contains browser-sync to have an easier workflow during development.
 
 The first time you have to get the dependencies by running to the following command from the root of your OffbeatWP theme
 
@@ -40,4 +40,10 @@ Next add the following line to your `resources/sass/main.scss` file:
 ```
 
 Check this file how to show the icon in your html.
+
+To give an example of an icon in HTML
+
+```
+<i class = 'icons icons-pen-square-solid'></i>
+```
 
