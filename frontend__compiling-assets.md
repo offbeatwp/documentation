@@ -41,3 +41,9 @@ Next add the following line to your `resources/sass/main.scss` file:
 
 Check this file how to show the icon in your html.
 
+To give an example of an icon in HTML
+
+```
+<i class = 'icons icons-pen-square-solid'></i>
+```
+
