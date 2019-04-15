@@ -33,6 +33,12 @@ offbeat('routes')->get('user/{user_id}/',
 );
 ```
 
+## Ajax route
+
+``` 
+offbeat('ajax')->make('name', Ajax\Folder\ClassName::class);
+```
+
 
 ### 1. In your themes route folder
 
@@ -52,4 +58,6 @@ Add this to your `register` method:
 ```
 add_action('before_route_matching', [ $this, 'registerRoutes' ]);
 ```
+
+
 
