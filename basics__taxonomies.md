@@ -18,7 +18,7 @@ Basically the first and last line are the most important. The first line:
 
 `offbeat('taxonomy')::make('download_category', ['download'], 'Categorieën', 'Categorie')`
 
-has four arguments, the `taxonomy`, `post_types`, `Plural label` a `Single label`
+has four arguments, the `taxonomy`, `post_types`, `Plural label` and a `Single label`
 
 The last line (`->set()`) performs the actual "register_taxonomy".
 
