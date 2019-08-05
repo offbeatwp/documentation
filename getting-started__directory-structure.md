@@ -61,6 +61,6 @@ The directory structure of an OffbeatWP look like this:
 - style.css
     _This is a default Wordpress theme file, only used for the basic theme information like name, author, license, etc. _
 - tests
-    _Will contain your website' unit tests (still needs to be implemented)_
+    _contains your website' unit tests **(still needs to be implemented)**_
 - vendor
-    _Will contain the fetched libraries through composer_
+    _contains the fetched libraries through composer_
