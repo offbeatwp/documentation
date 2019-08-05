@@ -55,7 +55,7 @@ The directory structure of an OffbeatWP look like this:
     - api.php
         (Routes for API call)
     - web.php
-        ((Routes for normal pages)
+        (Routes for normal pages)
 - screenshot.png
     _Is used as a preview image in the overview of the available themes_
 - style.css
