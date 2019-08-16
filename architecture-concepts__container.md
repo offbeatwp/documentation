@@ -1,6 +1,6 @@
 # Container
 
-The container manages the dependencies and performs the dependency injection. OffbeatWP uses the powerful implementation from [PHP DI](http://php-di.org/). You'll find the documentation of PHP DI [here](http://php-di.org/doc/).
+The container manages the dependencies and is performing the dependency injection. OffbeatWP uses the powerful implementation of [PHP DI](http://php-di.org/). You can find the documentation of PHP DI [here](http://php-di.org/doc/).
 
 Example:
 ```
@@ -19,7 +19,7 @@ class PagesController extends AbstractController {
 }
 ```
 
-In this example, the `PageController` needs to get a specific page from the database. We can use a repository to do so. So we inject the repository, the container does this automatically. This is extremely useful in case of unit testing. When running a test we easily can swap the repository by a dummy implementation and run that method with dummy data.
+In this example, the `PageController` needs to get a specific page from the database. We can use a repository to do so. So we will inject the repository, the container will do this automatically. This is extremely useful in case of unit testing. When running a test we easily can swap the repository by a dummy implementation and run that method with dummy data.
 
 
 ## Binding
