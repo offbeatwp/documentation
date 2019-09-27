@@ -61,6 +61,14 @@ wp offbeatwp make-postmodel {name} --post_type={post_type}--module={module_name}
 
 By default the PostModel comes with the following methods to get data from the post:
 
+#### `getPreviousPost(false, '', '')`
+
+Get the previous post
+
+#### `getNextPost(false, '', '')`
+
+Get the next post (you can use all the methods below)
+
 #### `getId()`
 
 Get the id of the post
