@@ -43,7 +43,5 @@ It's our mission the get a more professional and standardized way of developing 
 
 - [Compiling assets](frontend__compiling-assets.md)
 
-## License
 
-The OffbeatWP framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
