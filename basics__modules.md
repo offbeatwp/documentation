@@ -8,5 +8,20 @@ OffbeatWP has a CLI command to easily create a module for you:
 
 `wp offbeatwp make-module {name}`
 
+If you want to use the module you need to activate it. You can do this by editing the services.php file. It is located in the config folder and it looks like this.  
 
+```php
+return [
+    OffbeatWP\Twig\Service::class,
+    App\Services\SiteService::class,
+    OffbeatWP\AcfLayout\Service::class,
+    OffbeatWP\GravityForms\Service::class,
+    OffbeatWP\GravityFormsBootstrapV4\Service::class,
+    OffbeatWP\AcfSiteSettings\Service::class,
+    Modules\KnowledgeBase\KnowledgeBase::class
+];
+```
 
+As you can see, I have registered my module at the bottom line.
+
+`Modules\KnowledgeBase\KnowledgeBase::class`
