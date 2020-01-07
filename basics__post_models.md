@@ -181,7 +181,13 @@ This will get you the number of posts as configured in the WordPress settings (S
 PostModel::all();
 ```
 
-Get post except the Id's you add 
+Get a paginated version of the postModel
+
+```
+PostModel::paginated()
+```
+
+Get posts except from the Id's you have added 
 
 ```
 PostModel::whereIdNotIn($ids);
