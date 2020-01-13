@@ -10,7 +10,7 @@ OffbeatWP has two types of models:
 
 A post model represents a post of a specific post type. Below an example of a post model:
 
-```
+```php
 <?php
 namespace App\Models;
 
@@ -25,7 +25,7 @@ class PostModel extends OffbeatWpPostModel {
 
 It is easy to extend the model so you can get the data of a post in a readable and intuitive way. If you have a post type for `events` it would be great to have a getter just for this:
 
-```
+```php
 <?php
 namespace App\Models;
 
@@ -47,13 +47,13 @@ Now you can can easy get the post' event date by doing `$event->getEventDate();`
 
 To create a model you can use the CLI-command:
 
-```
+```bash
 wp offbeatwp make-postmodel {name} --post_type="{post_type}"
 ```
 
 If you want to create a model for a module you can do this by adding `--module={module_name}` to the command like:
 
-```
+```bash
 wp offbeatwp make-postmodel {name} --post_type={post_type}--module={module_name}
 ```
 
@@ -145,7 +145,7 @@ You can add the constant `ORDER` and `ORDER_BY` to a model. Now every time you a
 
 You can extend any post model from outside the model itself. This is called a macro. We have a [independent service](https://github.com/offbeatwp/acf) to integrate [Advanded Custom Fields }(https://www.advancedcustomfields.com/pro/) with OffbeatWP. Within the post model, we want to be able to easily get an ACF field. The service contains the following `macro`:
 
-```
+```php
 PostModel::macro('getField', function ($name, $format = true) {
     return get_field($name, $this->getId(), $format);
 });
@@ -153,7 +153,7 @@ PostModel::macro('getField', function ($name, $format = true) {
 
 Now we can easily access the post' ACF field be doing:
 
-```
+```php
 post.getField('key')
 ```
 
@@ -161,7 +161,7 @@ post.getField('key')
 
 OffbeatWP maps posts to the related model. But to make this possible we have to register the models. When you register the post type within your theme you can do this all at once as [explained here](basics__post_types.md). But if the post_type is Building (like post and page), or is defined within a plugin you have to do this by:
 
-```
+```php
 offbeat('post-type')->registerPostModel('post', \App\Models\PostModel::class);
 ```
 
@@ -171,43 +171,43 @@ The first argument is the post_type and the second the PostModel.
 
 You can get posts from the model just by doing the following:
 
-```
+```php
 PostModel::all();
 ```
 
 This will get you the number of posts as configured in the WordPress settings (Settings > Reading).
 
-```
+```php
 PostModel::all();
 ```
 
 Get a paginated version of the postModel
 
-```
+```php
 PostModel::paginated()
 ```
 
 Get posts except from the Id's you have added 
 
-```
+```php
 PostModel::whereIdNotIn($ids);
 ```
 
 This will get you all the posts.
 
-```
+```php
 PostModel::take(5);
 ```
 
 This will get you the first 5 posts. 
 
-```
+```php
 PostModel::first();
 ```
 
 This will get you the first post.
 
-```
+```php
 PostModel::findbyId($id);
 ```
 
@@ -217,19 +217,41 @@ Find a post by id.
 
 OffbeatWP comes with a variety of methods to filter your posts:
 
-`where($args)`
+```php
+where($args)
+```
 
 The arguments are equal to [WP_Query](https://codex.wordpress.org/Class_Reference/WP_Query). But since this won't make your code very readable we do not recommend this filter.
 
-`whereTerm($taxonomy, $terms = [], $field = 'slug', $operator = 'IN')`
+```php
+whereTerm($taxonomy, $terms = [], $field = 'slug', $operator = 'IN')
+```
 
 Filter the posts by a term. 
 
-`whereDate($args)`
+```php
+whereDate($args)
+```
 
 Filter the posts by date. Arguments are equal to [WP_Query::data_query](https://codex.wordpress.org/Class_Reference/WP_Query#Date_Parameters)
 
-`whereMeta($key, $value = '', $compare = '=')`
+```php
+ return $baseModel->whereMeta([
+                [
+                    'relation' => 'OR',
+                    [
+                        'key' => 'my_key',
+                        'value' => '1',
+                        'compare' => '!='
+                    ],
+                    [
+                        'key' => 'my_key',
+                        'compare' => 'NOT EXISTS'
+                    ],
+                ]
+            ])->get();
+
+```
 
 Filter the posts by meta.
 
@@ -237,7 +259,7 @@ Filter the posts by meta.
 
 Those filters can be chained like:
 
-```
+```php
 PostModel::whereTerm('tags', 'awesome')->whereMeta('great', 'NOT', '!=')->all();
 ```
 
@@ -247,7 +269,7 @@ This will get you *all* the posts having the tag "awesome" and where meta "great
 
 Ordering posts can be done by adding `->order($order_by, $order)` to the chain, like:
 
-```
+```php
 PostModel::whereTerm('tags', 'awesome')->order('id', 'ASC')->take(5);
 ```
 
@@ -273,7 +295,7 @@ With a more advanced website, you often want to create relationships between pos
 
 First, we have to install a service, this to your `config/services.php` file:
 
-```
+```php
 OffbeatWP\Content\Post\Relations\Service::class,
 ```
 
@@ -287,7 +309,7 @@ wp post-relations:install
 
 In your model, you can define the relationship like this
 
-```
+```php
 <?php
 namespace App\Models;
 
@@ -311,25 +333,25 @@ Besides `->hasMany` you can use `->hasOne()`, `->belongsTo()` or `->belongsToMan
 
 Now you can attach another post by doing:
 
-```
+```php
 $event->locations()->attach($id);
 ```
 
 If you also use an array of ids to attach multiple posts at once. By default, the relations are appended to existing relationships. If you what to replace the existing relationships, you just have to add a second parameter with the value `false` like:
 
-```
+```php
 $event->locations()->attach([1,2,3], false);
 ```
 
 You can detach an relationship by doing:
 
-```
+```php
 $event->locations()->detach($id);
 ```
 
 or to detach all relationships.
 
-```
+```php
 $event->locations()->detachAll();
 ```
 
@@ -337,30 +359,30 @@ $event->locations()->detachAll();
 
 Now you can associate another post by doing:
 
-```
+```php
 $location->events()->associate($id);
 ```
 
 If you also use an array of ids to associate multiple posts at once. By default, the relations are appended to existing relationships. If you what to replace the existing relationships, you just have to add a second parameter with the value `false` like:
 
-```
+```php
 $location->events()->associate([1,2,3], false);
 ```
 
 You can dissociate an relationship by doing:
 
-```
+```php
 $event->locations()->dissociate($id);
 ```
 
 or to dissociate all relationships.
 
-```
+```php
 $event->locations()->dissociateAll();
 ```
 
 
 ### Using relationships
-```
+```php
 $event->locations()->get();
 ```
