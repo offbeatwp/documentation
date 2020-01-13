@@ -35,9 +35,10 @@ It's our mission the get a more professional and standardized way of developing 
 - [Term models](basics__term_models.md)
 - [Views](basics__views.md)
 - [Modules](basics__modules.md)
-- [Components](basics__components.md)
+- [Components](basics__globals.md)
 - [Forms](basics__forms.md)
 - [Relationships (beta)](basics__post_models.md#relationships-beta)
+- [Globals](getting-started__globals.md)
 
 ## Frontend
 
