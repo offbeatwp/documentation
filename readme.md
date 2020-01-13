@@ -38,7 +38,7 @@ It's our mission the get a more professional and standardized way of developing 
 - [Components](basics__globals.md)
 - [Forms](basics__forms.md)
 - [Relationships (beta)](basics__post_models.md#relationships-beta)
-- [Globals](getting-started__globals.md)
+- [Globals](basics__globals.md)
 
 ## Frontend
 
