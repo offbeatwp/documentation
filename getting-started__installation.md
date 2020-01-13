@@ -17,7 +17,7 @@ How to install it depends on the operation system you are using. For Mac users: 
 
 ### Optional, but recommended
 
-- <a href="https://www.advancedcustomfields.com/pro/" target="_blank">Advanced Custom Fields Pro</a> ($25,- for single website / $100 for developer licence (unlimited sites))
+- <a href="https://www.advancedcustomfields.com/pro/" target="_blank">Advanced Custom Fields Pro</a> ($18,- for single website / $70 for developer licence (unlimited sites))
 
 To be honest, we're in love with this plugin. It delivers awesome functionality and joined with OffbeatWP, magic is happening. OffbeatWP integrates ACF in three different areas:
 1. Adding fields on post types and terms and make them available in the models automatically. [Learn more](https://github.com/offbeatwp/acf)
