@@ -60,4 +60,4 @@ Within your twig template, you'll have access to a `wp` global variable. Through
 
 `{{ __('{string}', '{textdomain}') }}` -> \__($string, $textdomain);
 
-`{{ gf.form(settings.form.id, false, false, false, null, true) | raw }}`
+`{{ gf.form(settings.form.id, false, false, false, null, true) | raw }}` get gravity form
