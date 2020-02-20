@@ -59,3 +59,5 @@ Within your twig template, you'll have access to a `wp` global variable. Through
 `{{ wp.templateUrl($path = null) }}` -> get_template_directory_uri();
 
 `{{ __('{string}', '{textdomain}') }}` -> \__($string, $textdomain);
+
+`{{ gf.form(settings.form.id, false, false, false, null, true) | raw }}`
