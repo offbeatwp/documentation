@@ -9,8 +9,8 @@ Check the website of Twig for the [documentation](https://twig.symfony.com/doc/2
 `{{ config($key) }}`
 Get settings from one of the files in the `/config` folder.
 
-`{{ getAssetUrl($file) }}`
-Files that are compiled through the OffbeatWP asset builder (css, js and images) has a hashed name. To get the correct path you should use this method which checks the manifest and maps returns the correct url.
+`{{ assetUrl($file) }}`
+Files that are compiled through the OffbeatWP asset builder (CSS, js and images) has a hashed name. To get the correct path you should use this method which checks the manifest and maps returns the correct URL.
 
 `{{ component($name, $args = []) }}`
 Getting and rendering a OffbeatWP Component (More about [components](basics__components.md))
