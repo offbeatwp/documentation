@@ -2,7 +2,7 @@ If you want to call a function in your twig file, you have the option to do this
 
 
 First of all, I have made a class GeneralHelper (located in App/Helpers).
-The only thing the class is doing is return the $_GET value.
+The only thing this class is doing is return the $_GET value.
 
 ```php
 
