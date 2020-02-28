@@ -188,7 +188,7 @@ Select box with vertical-align options
 
 ## Creating your own fields
 
-In some cases, it could be interesting to create your own fields by extending OffbeatWP Fields so you can reuse them. The right place to this is in an `app/Form/Fields` folder from the root of your theme.
+In some cases, it could be interesting to create your own fields by extending OffbeatWP Fields so you can re-use them. The right place to this is in an `app/Form/Fields` folder from the root of your theme.
 
 If for example, you want to have a field to define a rating create a file named `Rating.php` in your `app/Form/Fields` directory, containing:
 
