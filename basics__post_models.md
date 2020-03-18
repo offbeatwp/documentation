@@ -71,6 +71,10 @@ Get the next post (you can use all the methods below)
 
 #### `getId()`
 
+Get children of post
+
+#### `getChildren()`
+
 Get the id of the post
 
 #### `getTitle()`
