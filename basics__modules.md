@@ -25,3 +25,23 @@ return [
 As you can see, I have registered my module at the bottom line.
 
 `Modules\KnowledgeBase\KnowledgeBase::class`
+
+A simple module would look like this:
+
+```
+├── Agenda.php
+├── Components
+│   └── AgendaOverview
+│       ├── AgendaOverview.php
+│       └── views
+│           └── agenda-overview.twig
+├── Controllers
+│   └── AgendaController.php
+├── Models
+│   ├── EventCategoryModel.php
+│   └── EventModel.php
+├── Repositories
+│   └── AgendaRepository.php
+└── views
+    └── single.twig
+```
