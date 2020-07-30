@@ -62,7 +62,7 @@ When you register the post_type you can set the related model with it. By the Of
 
 ## Available methods for settings
 
-`rewrite($rewrite)`
+`rewrite($rewrite) ex: rewrite(['with_front' => false, 'slug' => 'client'])`
 
 `labels($labels)`
 
