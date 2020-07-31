@@ -62,5 +62,5 @@ Within your twig template, you'll have access to a `wp` global variable. Through
 
 `{{ gf.form(settings.form.id, false, false, false, null, true) | raw }}` get gravity form
 
-`{{ dump(wp.allPostMeta) }}` get all post meta from the current post or (wp.allPostMeta($postId) for a specefic post (you can add `<pre>` tags to make it more clear)
+`{{ dump(wp.allPostMeta) }}` get all post meta from the current post or (`wp.allPostMeta($postId)` for a specefic post (you can add `<pre>` tags to make it more clear)
 
